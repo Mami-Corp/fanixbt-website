@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('/fonts/RobotoMono-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('/fonts/RobotoMono-Medium.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'inter-extrabold-italic';
+  src: url('/fonts/Inter_24pt-ExtraBoldItalic.ttf');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.swiper-slide-active {
+	transform: scale(1)!important;
+  opacity: 1!important;
+}
+
+.swiper-slide {
+	transition: 0.5s;
+  transform: scaleX(0.85);
+  opacity: 0.8;
+}

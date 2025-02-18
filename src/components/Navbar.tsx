@@ -4,21 +4,19 @@ import NavbarBG from "../../public/navbarBg.svg"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import XIcon from "../../public/icons/xIcon.svg"
-// import TelegramIcon from "../../public/icons/telegramIcon.svg"
+import TelegramIcon from "../../public/icons/telegramIcon.svg"
 import useMediaQuery from "../../hooks/useMediaQuery"
 import Logo from "../../public/navbarLogo.svg"
 import MenuIcon from "../../public/icons/menuIcon.png"
 import CloseIcon from "../../public/icons/close.png"
 
 const links = [
-    // { href: "/dexscreener", name: "Dexscreener" },
-    // { href: "/gallery", name: "Gallery" },
     { href: "https://x.com/fanixbt", name: "Talk To Me" },
 ]
 
 const socialMedia = [
-    { href: "https://x.com/fanixbt", icon: XIcon }
-    // { href: "##", icon: TelegramIcon },
+    { href: "https://x.com/fanixbt", icon: XIcon },
+    { href: "https://t.me/fanixbt", icon: TelegramIcon },
 ]
 
 export default function Navbar() {

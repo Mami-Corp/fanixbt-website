@@ -2,12 +2,12 @@ import React from "react"
 import Image, { StaticImageData } from "next/image"
 import FooterLogo from "../../public/footerLogo.svg"
 import XIcon from "../../public/icons/xIcon.svg"
-// import TelegramIcon from "../../public/icons/telegramIcon.svg"
+import TelegramIcon from "../../public/icons/telegramIcon.svg"
 import Link from "next/link"
 
 const socialMedia = [
     { href: "https://x.com/fanixbt", icon: XIcon },
-    // { href: "##", icon: TelegramIcon },
+    { href: "https://t.me/fanixbt", icon: TelegramIcon },
 ]
 
 export default function Footer() {
@@ -27,7 +27,11 @@ export default function Footer() {
             </div>
             <p className='font-robotoRegular'>
                 Developed by{" "}
-                <a className="underline" href='https://mamicorp.com' target='_blank' rel='noreferrer'>
+                <a
+                    className='underline'
+                    href='https://mamicorp.com'
+                    target='_blank'
+                    rel='noreferrer'>
                     Mami Corp.
                 </a>
             </p>
